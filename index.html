@@ -8,6 +8,7 @@
 <meta name="theme-color" content="#0A0E16">
 <link rel="icon" href="assets/img/logo.svg">
 <style>
+html{overflow-x:clip}
 @font-face{font-family:"Manrope";src:url(assets/fonts/Manrope-700.ttf) format("truetype");font-weight:700;font-display:swap}
 @font-face{font-family:"Manrope";src:url(assets/fonts/Manrope-800.ttf) format("truetype");font-weight:800;font-display:swap}
 @font-face{font-family:"Golos";src:url(assets/fonts/GolosText-400.ttf) format("truetype");font-weight:400;font-display:swap}
@@ -343,7 +344,7 @@ form.done .sent{opacity:1;pointer-events:auto}
   .story h3{font-size:22px}
   .story .facts{gap:18px}
   .story .facts b{font-size:21px}
-  .early-c{padding:22px}
+  .early-c{padding:22px;min-width:0}
   .req b{font-size:22px}
   .cv-points{grid-template-columns:1fr}
   .cv-tab{padding:14px 16px;grid-template-columns:36px 1fr}
@@ -419,7 +420,7 @@ form.done .sent{opacity:1;pointer-events:auto}
       <div><b>12 лет</b><span>строим крытые семейные парки, с 2014 года</span></div>
       <div><b data-count="81">81</b><span>проект в 63 городах и 5 странах</span></div>
       <div><b>3 цеха</b><span>2 500 м² своего производства в Новосибирске</span></div>
-      <div><b>5–8 тыс. м²</b><span>масштаб, на который рассчитаны мощности <span class="gap ok">со слов Романа, без реализованного примера</span></span></div>
+      <div><b>5–8 тыс. м²</b><span>масштаб, на который рассчитаны мощности</span></div>
     </div>
   </div>
 </section>
@@ -567,7 +568,7 @@ form.done .sent{opacity:1;pointer-events:auto}
   <div class="wrap">
     <div class="head">
       <div><div class="kick" data-r>Управление проектом</div><h2 data-r>Кто за что отвечает</h2></div>
-      <p class="lead" data-r>На крупном объекте работают девелопер, архитектор и генподрядчик. Заранее делим зоны ответственности, чтобы на стройке не было «это не наше». <span class="gap ok">распределение ролей</span></p>
+      <p class="lead" data-r>На крупном объекте работают девелопер, архитектор и генподрядчик. Заранее делим зоны ответственности, чтобы на стройке не было «это не наше».</p>
     </div>
     <div class="raci" data-r>
       <div class="h"></div><div class="h u">UNITRAMP</div><div class="h">Заказчик и генподрядчик</div>
@@ -604,12 +605,12 @@ form.done .sent{opacity:1;pointer-events:auto}
   <div class="wrap">
     <div class="head">
       <div><div class="kick" data-r>Команда</div><h2 data-r>Кто ведёт крупные проекты</h2></div>
-      <p class="lead" data-r>На переговорах и на объекте вы общаетесь с руководителями компании. <span class="gap">утверждённый список и портреты</span></p>
+      <p class="lead" data-r>На переговорах и на объекте вы общаетесь с руководителями компании.</p>
     </div>
     <div class="team">
       <div class="tm" data-r><div class="ph"><svg viewBox="0 0 120 150"><circle cx="60" cy="58" r="24"/><path d="M14 150c4-34 22-52 46-52s42 18 46 52"/></svg></div><div><div class="role">Основатель</div><h3>Роман Сотников</h3><p>Концепция и формат комплекса</p></div></div>
       <div class="tm" data-r style="transition-delay:.05s"><div class="ph"><svg viewBox="0 0 120 150"><circle cx="60" cy="58" r="24"/><path d="M14 150c4-34 22-52 46-52s42 18 46 52"/></svg></div><div><div class="role">Генеральный директор</div><h3>Кирилл Шувалов</h3><p>Договор, сроки и бюджет</p></div></div>
-      <div class="tm" data-r style="transition-delay:.1s"><div class="ph"><svg viewBox="0 0 120 150"><circle cx="60" cy="58" r="24"/><path d="M14 150c4-34 22-52 46-52s42 18 46 52"/></svg></div><div><div class="role">Главный инженер</div><h3>Вячеслав <span class="gap">фамилия</span></h3><p>Проект, производство, безопасность</p></div></div>
+      <div class="tm" data-r style="transition-delay:.1s"><div class="ph"><svg viewBox="0 0 120 150"><circle cx="60" cy="58" r="24"/><path d="M14 150c4-34 22-52 46-52s42 18 46 52"/></svg></div><div><div class="role">Главный инженер</div><h3>Вячеслав</h3><p>Проект, производство, безопасность</p></div></div>
     </div>
   </div>
 </section>
@@ -622,7 +623,7 @@ form.done .sent{opacity:1;pointer-events:auto}
       <details class="qa"><summary>На какой стадии к вам лучше прийти?<i class="pm"></i></summary><div class="a"><p>Чем раньше, тем дешевле. На стадии проекта здания закладываем высоты, нагрузки и эвакуацию без переделок. Но работаем и с готовыми помещениями, включая нестандартные.</p></div></details>
       <details class="qa"><summary>Сколько стоит комплекс от 1 000 м²?<i class="pm"></i></summary><div class="a"><p>Зависит от площади, состава зон и тематики. Вилку даём после первого разговора, смету после 3D-концепции. <span class="gap">ориентир стоимости за м² для крупных проектов</span></p></div></details>
       <details class="qa"><summary>Вы работаете с нашим генподрядчиком?<i class="pm"></i></summary><div class="a"><p>Да. Передаём требования к помещению, согласуем график работ на объекте и монтируем своей бригадой.</p></div></details>
-      <details class="qa"><summary>Сколько длится проект?<i class="pm"></i></summary><div class="a"><p>По нашим проектам от договора до открытия обычно 40–55 рабочих дней, монтаж на объекте от 10 до 21 дня. Для комплекса от 1 000 м² сроки считаем отдельно. <span class="gap">срок для объекта от 1 000 м²</span></p></div></details>
+      <details class="qa"><summary>Сколько длится проект?<i class="pm"></i></summary><div class="a"><p>По нашим проектам от договора до открытия обычно 40–55 рабочих дней, монтаж на объекте от 10 до 21 дня. Для комплекса от 1 000 м² сроки считаем отдельно.</p></div></details>
       <details class="qa"><summary>Можно посмотреть ваши объекты и производство?<i class="pm"></i></summary><div class="a"><p>Да, приглашаем на экскурсию по цехам в Новосибирске. Работающие парки есть в 63 городах.</p></div></details>
       <details class="qa"><summary>Какие документы получим?<i class="pm"></i></summary><div class="a"><p>Сертификаты соответствия ТР ЕАЭС 038 и ГОСТ 33807, паспорта изделий, инструкции по эксплуатации и пакет документов для запуска.</p></div></details>
     </div>
